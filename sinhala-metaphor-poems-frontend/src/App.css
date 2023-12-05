@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.no-underline-link {
+  text-decoration: none;
+  color: white;
+}
+.no-underline-link:hover {
+  color: rgb(8, 131, 247);
+  transition: 0.8s;
+  scale: 1.1;
+}
+.custom-form-container {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Change the color and opacity as needed */
+  margin-bottom: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 25px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.background-image {
+  background-image: url("/public/background.jpg");
+  background-size: cover; /* Adjust background size properties as needed */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional for fixed background */
+}
+.table-hover tbody tr:hover {
+  background-color: rgba(10, 9, 10, 0.075);
+}
+.custom-button.enabled {
+  cursor: pointer !important;
+}
+
+.custom-button.disabled {
+  cursor: not-allowed !important;
+}
